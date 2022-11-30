@@ -11,7 +11,7 @@
 
 // Keywords:
 // sum of two nums
-const ARR: number[] = [1, 10, 11];
+const ARR: number[] = [1, 2, 3, 4, 5, 6];
 let MEMO = new Set();
 
 function dp(index: number): void {
@@ -33,7 +33,9 @@ function sumOfTwoNums(numberQuery: number): boolean {
 
 function main() {
   dp(ARR[0]); //Executed only the first time
-  var numberQuery = 11;
+
+  //Here should be a bucle of infinite queries
+  var numberQuery = 10;
   console.log(sumOfTwoNums(numberQuery));
 }
 
